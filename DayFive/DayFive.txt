@@ -1,0 +1,10 @@
+// Command Line Arguments:-
+
+
+To create and array in Java we have to use below syntax:-
+
+int a[] =  new int[5];
+
+Package means --- Folder
+
+

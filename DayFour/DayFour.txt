@@ -1,0 +1,11 @@
+Important :_--------We can make multiple object of class 
+example :- Box b1  =  new Box();
+
+Interview Question:- What is wrapper class?
+-- Wrapper class is use to make Java 100% OOPS(Object Oriented Programmimg Language);
+-- To convert primitive to non-primitive and vise-versa.
+----------
+--int(datatype) - Integer(Java Class)
+--float(datatype) - Float(Java Class)
+--double(datatype) - Double(Java Class)
+--char(datatype) - Character(Java Class)

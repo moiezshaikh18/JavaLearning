@@ -1,0 +1,48 @@
+****In this lecture we understand about class and it compulsoury 
+to write "public static void main(String[]args)"
+
+
+*** Only static member can access in main class using Class nname
+example:->
+class moiz{
+
+void f1(){
+    print ..... Anything
+}
+}
+
+class program{
+    public static void main(String[]args){
+        moiz.f1()////////// Cant be accesable because it doen't have "static" member
+    }
+}
+
+
+
+****If i want to call function within onther class it has be static
+function
+ex:
+
+static void funOne(){
+    System.out.println("Funone");
+}
+
+**** If i want to access function or instance varibale in onther class
+we need to create instance of that class.
+Example:
+
+int x;
+void funone(){
+    System.out.println("Non-Static Function");
+}
+
+public static void main(String[]args){
+    Example e1 = new Example();
+
+    e1.funone();
+    e1.x;
+
+    System.out.println(e1.x); //outPut:-  "0" Zero defaukt value
+}
+
+

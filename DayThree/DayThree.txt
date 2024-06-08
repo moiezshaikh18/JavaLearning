@@ -1,0 +1,19 @@
+Interview Questions*** Access Specifier
+> To access the "private static variable" ex:-- private static int x;
+need to create static member function
+ex:----->
+
+static void f1(){
+    x=5
+}
+
+{
+    ....In main classs
+    Demo.f1();
+}
+
+
+*** Interview Questions :---- One java files has online one "Public" class
+Also Java doesn't have "private" or "protected" class (can be inner class)
+
+ 

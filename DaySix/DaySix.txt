@@ -1,0 +1,16 @@
+//Packages
+
+Ex:- Having 2 packages and 
+
+
+to run javac -d .(dot indicaate current directory) fileName.java
+
+
+//Access Specifier
+1.Public  --- outside the package/class // outside program
+2.Private --- inside the class
+3.Protected --- same class / outside class / other package but limited access
+4.default --- outside class/same package
+
+//Non access Specifier
+static,abstarct,native ,transient

@@ -1,0 +1,15 @@
+**** Interview Question
+If class name and inside first function has same name it already intialize 
+before creating and object of that class in main Class.
+
+--Constructor is special function don't need to call it automatically call 
+when it created.
+--For Value intialize
+
+**** Type of Constructor
+- Default Constructor
+- parameterize Constructor
+- No-arg Constructor
+
+**** Creating two constructor with same name it don't have args and other
+having args it call "Constructor Overloading"

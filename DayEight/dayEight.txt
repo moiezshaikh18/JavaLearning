@@ -1,0 +1,7 @@
+**** InterView Questions Instance member variale and function
+-- Inheritance 
+
+--- Type of Inheritance
+- single
+- multiLevel
+- Hierarchical

@@ -54,8 +54,8 @@ class ThreadSyn {
     public static void main(String[] args) {
 
         Account a1 = new Account(5000);
-        Customer c1 = new Customer(a1, "gaurish");
-        Customer c2 = new Customer(a1, "girish");
+        Customer c1 = new Customer(a1, "Gaurish");
+        Customer c2 = new Customer(a1, "Girish");
 
         c1.start();
         c2.start();

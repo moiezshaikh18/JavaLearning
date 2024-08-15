@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
 
 class LoginScreen extends JFrame {
 
@@ -9,7 +10,11 @@ class LoginScreen extends JFrame {
 
     JPasswordField t2;
 
-    JButton b1, b2, b3;
+    JButton b1, b2, b3, b4;
+
+    Cursor c1;
+
+    Font f1;
 
     LoginScreen(String s1) {
         super(s1);
@@ -19,10 +24,16 @@ class LoginScreen extends JFrame {
     }
 
     void setComponents() {
+
+        f1 = new Font("Times New Roman", Font.BOLD, 28);
+
         l1 = new JLabel("WElcome to JAVA Class");
         l2 = new JLabel("UserName");
         l3 = new JLabel("Password");
         l4 = new JLabel();
+
+        l1.setFont(f1);
+        l1.setForeground(Color.red);
 
         t1 = new JTextField();
 
@@ -31,7 +42,11 @@ class LoginScreen extends JFrame {
         b1 = new JButton("Login Me !!!!");
         b2 = new JButton("Clear");
         b3 = new JButton("Add");
+        b4 = new JButton("Auto Fill");
 
+        c1 = new Cursor(Cursor.HAND_CURSOR);
+
+        b1.setCursor(c1);
         setLayout(null);
 
         add(l1);
@@ -45,6 +60,7 @@ class LoginScreen extends JFrame {
         add(b1);
         add(b2);
         add(b3);
+        add(b4);
 
         l1.setBounds(300, 50, 300, 30);
         l2.setBounds(100, 200, 100, 30);
@@ -57,10 +73,12 @@ class LoginScreen extends JFrame {
         b1.setBounds(200, 450, 100, 30);
         b2.setBounds(400, 450, 100, 30);
         b3.setBounds(500, 550, 100, 30);
+        b4.setBounds(500, 600, 100, 30);
 
         b1.addActionListener(new Log());
         b2.addActionListener(new Clear());
         b3.addActionListener(new Add());
+        b4.addActionListener(new AutoFill());
     }
 
     public static void main(String[] args) {
@@ -69,6 +87,7 @@ class LoginScreen extends JFrame {
 
         l1.setVisible(true);
         l1.setSize(700, 700);
+        l1.setBackground(Color.GREEN);
 
         l1.setComponents();
 
@@ -109,6 +128,15 @@ class LoginScreen extends JFrame {
             } catch (Exception e1) {
                 System.out.println("Wrong Data");
             }
+
+        }
+    }
+
+    class AutoFill implements ActionListener {
+
+        public void actionPerformed(ActionEvent e) {
+            t1.setText("coding");
+            t2.setText("password");
 
         }
     }
